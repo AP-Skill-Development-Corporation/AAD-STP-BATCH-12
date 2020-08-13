@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog"
+        android:background="#0E87E8"
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:onClick="alert"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Picker Dialog"
+        android:background="#FF5722"
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Picker Dialog"
+        android:background="#06AF0D"
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
