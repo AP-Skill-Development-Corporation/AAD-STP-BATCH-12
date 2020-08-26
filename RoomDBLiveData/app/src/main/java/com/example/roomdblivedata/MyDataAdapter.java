@@ -41,10 +41,14 @@ public class MyDataAdapter extends RecyclerView.Adapter<MyDataAdapter.MyViewHold
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MainActivity.database.myDao().delete(user);
+                /*This is For Normal DataBase*/
+                //MainActivity.database.myDao().delete(user);
+
+                /*This is for LiveData*/
+                MainActivity.viewModel.deleteData(user);
+
             }
         });
-
     }
 
     @Override

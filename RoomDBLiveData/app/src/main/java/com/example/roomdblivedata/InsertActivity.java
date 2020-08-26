@@ -30,7 +30,13 @@ public class InsertActivity extends AppCompatActivity {
         user.setName(name);
         user.setMailid(mailid);
         user.setNumber(phone);
-        MainActivity.database.myDao().insert(user);
+
+        /*This is for Normal DataBase*/
+        //MainActivity.database.myDao().insert(user);
+
+        /*This is For LiveData*/
+        MainActivity.viewModel.insertData(user);
+
         Toast.makeText(this, "Data Saved Sucessfully", Toast.LENGTH_SHORT).show();
         finish();
     }
